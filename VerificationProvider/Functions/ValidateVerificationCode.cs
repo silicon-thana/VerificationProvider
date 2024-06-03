@@ -30,7 +30,7 @@ public class ValidateVerificationCode(ILogger<ValidateVerificationCode> logger, 
         }
         catch (Exception ex)
         {
-            _logger.LogError($"ERROR : ValidateVerificationCode.Run :: {ex.Message}");
+            _logger.LogError($" : ValidateVerificationCode.Run :: {ex.Message}");
         }
 
         return new UnauthorizedResult();
